@@ -1,10 +1,8 @@
 'use client'
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 
 
 import LargeNavbar from './LargeNavbar';
-import SmallNavbar from './SmallNavbar';
-import { FaBars } from 'react-icons/fa6';
 
 // declare global {
 //     interface Window {

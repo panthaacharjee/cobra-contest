@@ -1,11 +1,11 @@
 import React from 'react'
 import Link from 'next/link'
-import Image from 'next/image';
+// import Image from 'next/image';
 
 import { FaBars } from "react-icons/fa6";
-import { CiBarcode } from "react-icons/ci";
+// import { CiBarcode } from "react-icons/ci";
 
-import Logo from "@/images/logo.svg"
+// import Logo from "@/images/logo.svg"
 
 const LargeNavbar = ({handleModal}) => {
      
