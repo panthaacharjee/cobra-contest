@@ -18,14 +18,12 @@ import { BsGithub } from "react-icons/bs";
 import { FaFacebook } from "react-icons/fa";
 import { FcGoogle } from "react-icons/fc";
 
-
-type FormData = z.infer<>;
 const page = () => {
     const {
         register,
         handleSubmit,
         formState: { errors },
-      } = useForm<FormData>()
+      } = useForm()
       const onSubmit = (data) => {
         console.log(data)
       }
