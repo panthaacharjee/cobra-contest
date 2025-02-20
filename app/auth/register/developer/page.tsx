@@ -56,18 +56,18 @@ const page = () => {
                     <div className="w-full lg:w-11/12">
                         <div className="">
                             <input {...register("name", {required:"This field is required"})} className="border-[1px] border-[#aaaaaa] px-4 py-[6.9px] rounded-md mt-1 w-full" type="text" placeholder="Enter your name"/>
-                            <p className="text-red-300  h-10 text-xs">{String(errors.name?.message)}</p>
+                            <p className="text-red-300  h-10 text-xs">{errors.name && String(errors.name?.message)}</p>
                         </div>
                         <div className="mt-[-20px]">
                             <input {...register("email", {required:"This field is required"})} className="border-[1px] border-[#aaaaaa] px-4 py-[6.9px] rounded-md mt-1 w-full" type="text" placeholder="Enter your email"/>
-                            <p className="text-red-300  h-10 text-xs">{String(errors.email?.message)}</p>
+                            <p className="text-red-300  h-10 text-xs">{errors.email &&  String(errors.email?.message)}</p>
                         </div>
                         <div className="mt-[-20px]">
                             <input {...register("password", {required:"This field is required", minLength:{
                                 value:8,
                                 message:"Minimum character 8 words"
                             }})} className="border-[1px] border-[#aaaaaa] px-4 py-[6.9px] rounded-md mt-1 w-full" type="text" placeholder="Enter your sequrity key"/>
-                            <p className="text-red-300 h-10 text-xs">{String(errors.password?.message)}</p>
+                            <p className="text-red-300 h-10 text-xs">{errors.password && String(errors.password?.message)}</p>
                         </div>
                         <button className="px-8 md:px-10 py-2 md:py-3 bg-[#9b9b9b] rounded-sm text-white font-medium text-xs w-full mt-[-20px]">Login</button>
                     </div>
