@@ -13,7 +13,7 @@ import LargeNavbar from './LargeNavbar';
 
 const Navbar = () => {
     const router = useRouter()
-    const myElement = document.getElementById('my_modal_1') as HTMLElement;
+    const myElement = document.getElementById('my_modal_1') as HTMLDialogElement;
     const myRef = useRef(null);
     const handleModal=()=>{
         myElement.showModal()
