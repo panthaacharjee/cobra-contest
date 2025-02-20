@@ -7,7 +7,7 @@ import { FaBars } from "react-icons/fa6";
 
 // import Logo from "@/images/logo.svg"
 
-const LargeNavbar = ({handleModal}) => {
+const LargeNavbar = ({handleModal}:any) => {
      
   return (
     <div className="container mx-auto flex items-center justify-between py-2 px-4 md:px-0 z-50">

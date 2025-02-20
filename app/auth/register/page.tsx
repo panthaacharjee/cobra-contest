@@ -15,7 +15,7 @@ const page = () => {
     const router = useRouter()
     const [selected, setSelected] = useState(true)
     
-    const handleSelect = (props)=>{
+    const handleSelect = (props:any)=>{
         if(props === "company"){
             setSelected(true)
         }else{

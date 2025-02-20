@@ -1,7 +1,7 @@
 "use client"
 import React from 'react'
 import Image from 'next/image'
-import { useForm, SubmitHandler } from "react-hook-form"
+import { useForm} from "react-hook-form"
 import * as z from "zod";
 import Link from 'next/link';
 
@@ -17,10 +17,7 @@ import { FaLinkedin } from "react-icons/fa6";
 import { BsGithub } from "react-icons/bs";
 import { FaFacebook } from "react-icons/fa";
 import { FcGoogle } from "react-icons/fc";
-
-interface Error{
-    error: string
-}   
+ 
 
 const page = () => {
     const {
