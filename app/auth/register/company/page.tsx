@@ -18,7 +18,7 @@ const page = () => {
     //   setValue(value)
     // }
 
-          const onSubmit = (data) => {
+          const onSubmit = (data:any) => {
             console.log(data)
           }
   return (
