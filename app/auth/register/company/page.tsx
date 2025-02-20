@@ -53,43 +53,43 @@ const page = () => {
                         <div className="mt-[-20px]">
                             <label>Work Email</label>
                             <input {...register("email", {required:"This field is required"})} className="border-[1px] border-[#aaaaaa] px-4 py-[6.9px] rounded-md mt-1 w-full" type="text" placeholder="Enter your email"/>
-                            <p className="text-red-300  h-10 text-xs">{errors.email?.message}</p>
+                            <p className="text-red-300  h-10 text-xs">{String(errors.email?.message)}</p>
                         </div>
                         <div className='flex items-center justify-between w-full '>
                             <div className="mt-[-20px] w-6/12">
                                 <label>First Name</label>
                                 <input {...register("fname", {required:"This field is required"})} className="border-[1px] border-[#aaaaaa] px-4 py-[6.9px] rounded-md mt-1 w-full" type="text" placeholder="Enter your first name"/>
-                                <p className="text-red-300  h-10 text-xs">{errors.fname?.message}</p>
+                                <p className="text-red-300  h-10 text-xs">{String(errors.fname?.message)}</p>
                             </div>
                             <div className="mt-[-20px] w-6/12 ml-2">
                                 <label>Last Name</label>
                                 <input {...register("lname", {required:"This field is required"})} className="border-[1px] border-[#aaaaaa] px-4 py-[6.9px] rounded-md mt-1 w-full" type="text" placeholder="Enter your last name"/>
-                                <p className="text-red-300  h-10 text-xs">{errors.lname?.message}</p>
+                                <p className="text-red-300  h-10 text-xs">{String(errors.lname?.message)}</p>
                             </div>
                         </div>
                         <div className='flex items-center justify-between w-full '>
                             <div className="mt-[-20px] w-6/12">
                                 <label>Company Name</label>
                                 <input {...register("cname", {required:"This field is required"})} className="border-[1px] border-[#aaaaaa] px-4 py-[6.9px] rounded-md mt-1 w-full" type="text" placeholder="Enter your company name"/>
-                                <p className="text-red-300  h-10 text-xs">{errors.cname?.message}</p>
+                                <p className="text-red-300  h-10 text-xs">{String(errors.cname?.message)}</p>
                             </div>
                             <div className="mt-[-20px] w-6/12 ml-2">
                                 <label>Job Title</label>
                                 <input {...register("jobtitle", {required:"This field is required"})} className="border-[1px] border-[#aaaaaa] px-4 py-[6.9px] rounded-md mt-1 w-full" type="text" placeholder="Enter your job title"/>
-                                <p className="text-red-300  h-10 text-xs">{errors.jobtitle?.message}</p>
+                                <p className="text-red-300  h-10 text-xs">{String(errors.jobtitle?.message)}</p>
                             </div>
                         </div>
                         <div className='flex items-center justify-between w-full '>
                             <div className="mt-[-20px] w-6/12">
                                 <label>Phone Number</label>
                                 <input {...register("phone", {required:"This field is required"})} className="border-[1px] border-[#aaaaaa] px-4 py-[6.9px] rounded-md mt-1 w-full" type="text" placeholder="Enter your company name"/>
-                                <p className="text-red-300  h-10 text-xs">{errors.phone?.message}</p>
+                                <p className="text-red-300  h-10 text-xs">{String(errors.phone?.message)}</p>
                             </div>
                             <div className="mt-[-20px] w-6/12 ml-2">
                                 <label>Country</label>
                                 <input {...register("country", {required:"This field is required"})} className="border-[1px] border-[#aaaaaa] px-4 py-[6.9px] rounded-md mt-1 w-full" type="text" placeholder="Enter your job title"/>
                                 {/* <CountrySelect value={value} options={options} changeHandler={changeHandler}/> */}
-                                <p className="text-red-300  h-10 text-xs">{errors.country?.message}</p>
+                                <p className="text-red-300  h-10 text-xs">{String(errors.country?.message)}</p>
                             </div>
                         </div>
                         <div className="mt-[-20px]">
@@ -98,7 +98,7 @@ const page = () => {
                                 value:8,
                                 message:"Minimum character 8 words"
                             }})} className="border-[1px] border-[#aaaaaa] px-4 py-[6.9px] rounded-md mt-1 w-full" type="text" placeholder="Enter your sequrity key"/>
-                            <p className="text-red-300 h-10 text-xs">{errors.password?.message}</p>
+                            <p className="text-red-300 h-10 text-xs">{String(errors.password?.message)}</p>
                         </div>
                         <button className="px-8 md:px-10 py-2 md:py-3 bg-[#9b9b9b] rounded-sm text-white font-medium text-xs w-full mt-[-20px]">Register</button>
                     </div>
