@@ -1,5 +1,4 @@
 "use client"
-
 /* ============= Packages ============== */
 import { useEffect, useState } from 'react';
 import gsap from 'gsap';
