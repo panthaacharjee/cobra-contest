@@ -88,7 +88,7 @@ const page = () => {
                         <button className='text-sm rounded-md border border-[#000] mt-5 sm:mt-0 w-full sm:w-4/12 py-2 flex items-center justify-center'><p className='text-2xl sm:text-lg mr-2 text-[#31a2cf]'><FaFacebook/></p><p>Facebook</p></button>
                     </div>
                     <div className='text-center mt-6'>
-                        <Link href="/auth/register/developer">Already have an account? Log in</Link>
+                        <Link href="/auth/login/developer">Already have an account? Log in</Link>
                     </div>
                 </div>
             </div>

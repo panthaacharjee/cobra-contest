@@ -1,7 +1,7 @@
 "use client"
 
 /* ============= Packages ============== */
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useState } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from '@gsap/react';
@@ -9,7 +9,6 @@ import Image from "next/image";
 import { FiChevronRight, FiChevronsLeft } from 'react-icons/fi';
 
 /* ============ Images ================= */
-import link from "@/images/programming coding GIF.gif"
 import coading from "@/images/coading.jpg"
 import candidate from "@/images/Home/candidate.jpg"
 import melisa from "@/images/Home/melisa.jpg"
@@ -316,7 +315,7 @@ export default function Home() {
                     }
                     return (
                       <article key={id} className={position}>
-                        <Image src={image} alt={name} className="person-img" />
+                        <img src={image} alt={name} width={120} height={120}  className="person-img" />
                         <h4>{name}</h4>
                         <p className="title">{title}</p>
                         <p className="text">{quote}</p>

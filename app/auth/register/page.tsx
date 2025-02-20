@@ -1,10 +1,15 @@
 "use client"
 import { useRouter } from 'next/navigation';
 import React, { useState } from 'react'
+import Image from "next/image"
 
 /* ============ Components ============ */
 import { FaSearch } from "react-icons/fa";
 import { IoIosArrowForward } from 'react-icons/io';
+
+/* ============ Images ============ */
+import devLogin from "@/images/dev-log.gif"
+import hi from "@/images/hi.svg"
 
 const page = () => {
     const router = useRouter()
@@ -29,9 +34,9 @@ const page = () => {
   return (
     <div className='flex flex-col lg:flex-row justify-between'>
         <div className="w-full lg:w-6/12">
-            <div className="container flex justify-center items-center h-screen">
-                <div className='w-8/12 mx-auto'>
-                    <h4 className='text-4xl font-semibold'>How do you want to use HackerRank?</h4>
+            <div className="container flex justify-center items-center lg:h-screen py-20 lg:py-0">
+                <div className='w-11/12 lg:w-8/12 mx-auto'>
+                    <h4 className='text-xl lg:text-4xl font-bold lg:font-semibold'>How do you want to use HackerRank?</h4>
                     <p className='mt-5 text-md'>We’ll personalize your setup experience accordingly.</p>
                     <div className={`bg-[#f0f0f0] mt-20 py-8 px-8 rounded-lg cursor-pointer ${selected  && "border-[1px] border-black"}`} onClick={()=>handleSelect("company")}>
                         {/* <input type='radio'/> */}
@@ -57,6 +62,8 @@ const page = () => {
             </div>
         </div>
         <div className="hidden lg:block w-full lg:w-6/12 h-screen bg-black">
+            {/* <Image src={devLogin} alt="Dev Login" className='h-full w-full'/>
+            <div className='absolute top-0 w-full h-screen bg-[#525252] backdrop-filter bg-opacity-15 backdrop-blur-lg'></div> */}
             
         </div>
     </div>

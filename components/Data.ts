@@ -1,4 +1,4 @@
-const people = [
+const people:any[] = [
     {
       id: 1,
       image:

@@ -1,5 +1,6 @@
 'use client'
 import React from 'react'
+import { useRouter } from 'next/navigation'
 
 
 import LargeNavbar from './LargeNavbar';
@@ -11,6 +12,7 @@ import LargeNavbar from './LargeNavbar';
 //   }
 
 const Navbar = () => {
+    const router = useRouter()
     const handleModal=()=>{
         document.getElementById("my_modal_1").showModal()
     }
@@ -103,9 +105,9 @@ const Navbar = () => {
                     <p className='text-md font-medium'>For Developers</p>
                 </div>
                 <div className='flex flex-col justify-between mt-5 px-4'>
-                    <button>Log in</button>
-                    <button className='border border-black py-2 mt-3 rounded-lg'>Request demo</button>
-                    <button className='border border-black bg-black text-white py-2 mt-3 rounded-lg'>Sign up</button>
+                    <button onClick={()=>router.push("/auth/login")}>Log in</button>
+                    <button onClick={()=>router.push("/auth/register/company")} className='border border-black py-2 mt-3 rounded-lg'>Request demo</button>
+                    <button onClick={()=>router.push("/auth/register")} className='border border-black bg-black text-white py-2 mt-3 rounded-lg'>Sign up</button>
                 </div>
             </div>
             <form method="dialog" className="modal-backdrop">

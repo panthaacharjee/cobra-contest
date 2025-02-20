@@ -166,7 +166,7 @@ const LargeNavbar = ({handleModal}) => {
             <div className='w-full lg:w-4/12 flex items-center justify-end'>
                 <div className='hidden lg:block'>
                     <Link href="/auth/login" className='text-sm font-medium px-5 py-2 mr-2 hover:bg-slate-50 rounded-md'>Log in</Link>
-                    <Link href="/auth/register" className='text-sm font-medium bg-slate-100 px-5 py-2 mr-2 rounded-md border-[1px] border-[#d3d3d3]'>Request Demo</Link>
+                    <Link href="/auth/register/company" className='text-sm font-medium bg-slate-100 px-5 py-2 mr-2 rounded-md border-[1px] border-[#d3d3d3]'>Request Demo</Link>
                     <Link href="/auth/register" className='text-sm font-medium bg-black text-white rounded-md px-5 py-2 '>Sign up</Link>
                 </div>
                 <div className='block lg:hidden'>
