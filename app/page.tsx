@@ -252,7 +252,7 @@ export default function Home() {
                 <button className='mt-5'>Request Demo ➜</button>
               </div>
             </div>
-            <div className='w-full md:w-5/12' id='box-4'id='box-5'>
+            <div className='w-full md:w-5/12' id='box-5'>
               <Image src={editor} alt='Problem Image'/>
             </div>
           </div>
