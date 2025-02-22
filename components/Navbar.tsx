@@ -1,5 +1,5 @@
 'use client'
-import React, { useRef } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import { useRouter } from 'next/navigation'
 
 
@@ -13,12 +13,18 @@ import LargeNavbar from './LargeNavbar';
 
 const Navbar = () => {
     const router = useRouter()
-    const myElement = document.getElementById('my_modal_1') as HTMLDialogElement;
+    const [model, setModel] = useState(false)
     const myRef = useRef(null);
     const handleModal=()=>{
-        myElement.showModal()
+        setModel(!model)
     }
-  
+    useEffect(()=>{
+        if(model){
+            const myElement = document.getElementById('my_modal_1') as HTMLDialogElement;
+            myElement.showModal()
+        }
+        
+    },[model])
   return (
     <div ref={myRef}>
         <div className='w-full backdrop-filter bg-opacity-30 backdrop-blur-lg fixed bg-slate-100 z-50 '>
